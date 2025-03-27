@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.equipamento {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.equipamento img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.equipamento .detalhes {
+    flex: 1;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .equipamento {
+        flex-direction: column;
+    }
+
+    .equipamento img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+}
+button{
+          background-color: #067bf8e3;
+          padding: 10px;
+          outline: none;
+          border: none;
+        }
+         a{
+          text-decoration: none;
+          color: black;
+          padding: 10px;
+          border-radius: 3px;
+         
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+    <title>Status equipamentos</title>
+</head>
+<body>
+    <h2> Relatorio de equipamentos de reuso</h2>
+    <div class="container">
+        <section class="equipamento">
+            <img src="ONU.jpg" alt="Equipamento 1">
+            <div class="detalhes">
+                <h2>OMU Intelbras</h2>
+                <p><strong>Entrada no NOC:</strong> 15/03/2024</p>
+                <p><strong>Manutenção:</strong> 15/03/2024</p>
+                <p><strong>Sáida:</strong> 15/03/2024</p>
+                <p><strong>Observações:</strong> Equipamento em bom estado, sem necessidade de reparos.</p>
+                <button>
+                    <a href="prototipo.html">Voltar</a>  
+                  </button>
+            </div>
+        </section>
+        </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+     
+        
+            h2{
+                text-align: center;
+            }
+        input {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #020202;
+            text-align: left;
+        }
+        th {
+            background: #007BFF;
+            color: white;
+        }
+        /*estilização do botão*/
+        button{
+          background-color: #067bf8e3;
+          padding: 10px;
+          outline: none;
+          border: none;
+        }
+         /*estilização do link de direcionamento*/
+         a{
+          text-decoration: none;
+          color: black;
+          padding: 10px;
+          border-radius: 3px;
+         
+        }
+        tr:hover {
+            background: #d8d6d6bb;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+  <h2> Controle geral de equipamentos de reuso</h2>
+  <input type="text" id="searchInput" onkeyup="filtrarTabela()" placeholder="Pesquisar...">
+  
+  <table id="tabelaEquipamentos" border="1">
+      <thead>
+          <tr>
+              <th>Nº</th>
+              <th>Nome</th>
+              <th>MAC</th>
+              <th>SN</th>
+              <th>Modelo</th>
+              <th>ID</th>
+              <th>Tipo de Equipamento</th>
+              <th>Patrimônio</th>
+              <th>Relatorio</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>	
+            <td>	1	</td>
+            <td>	Intelbras	</td>	
+            <td>	D8365FD24C31	</td>	
+            <td>	ITBSFD24C31	</td>	
+            <td>	AX1800	</td>
+            <td>	268	</td>	
+            <td>	ONT	</td>	
+            <td>001119</td>
+<!-- O botão levara para outra pagina onde estara um breverealtorio sobre o estado do equipamento-->
+             <td>
+              <button>
+                <a href="relatori.html">Entrar</a></td>
+              </button>
+          </tr>
+        </tbody>
+        </body>
+</html>
